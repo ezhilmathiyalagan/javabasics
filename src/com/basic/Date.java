@@ -1,7 +1,6 @@
 package com.basic;
 
-public class Date {
-int day;
+public class Date {int day;
 int month;
 int year;
 public Date() {
@@ -34,14 +33,12 @@ public void setYear(int year) {
 public void displayDate() {
 	System.out.println(day+"/"+month+"/"+year);
 }
-public static void main(String[]args)
+public static void main(String[]arg)
 {
 	Date d1=new Date();
 	d1.setDay(31);
-	d1.setMonth(05);
+	d1.setMonth(5);
 	d1.setYear(2018);
 	d1.displayDate();
 }
-
-
 }
