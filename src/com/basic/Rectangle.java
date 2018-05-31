@@ -1,8 +1,8 @@
 package com.basic;
 
 public class Rectangle {
-	float Length=1;
-	float Width=1;
+	float Length;
+	float Width;
 	public Rectangle() {
 		
 	}
@@ -10,7 +10,7 @@ public class Rectangle {
 		return Length;
 	}
 	public void setLength(float length) {
-		if(Length>0.0)
+		if(Length<0.0)
 		Length = length;
 	}
 	public float getWidth() {
@@ -18,7 +18,7 @@ public class Rectangle {
 	}
 	public void setWidth(float width) 
 	{
-	if(Width<20.0)
+	if(Width>20.0)
 		Width = width;
 	}
 public double getPerimeter()
@@ -27,7 +27,7 @@ public double getPerimeter()
 }
 public double getArea()
 {
-	return Length*Width;
+	return (Length*Width);
 }
 public static void main(String[]arg)
 {
