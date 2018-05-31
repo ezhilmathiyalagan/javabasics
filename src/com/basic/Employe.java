@@ -37,6 +37,10 @@ public class Employe {
 		employe2.setSalary(25500.00);
 		System.out.println(employe1.getSalary());
 		System.out.println(employe2.getSalary());
+		double salary=employe1.getSalary();
+		salary = salary*1.1;
+		employe1.setSalary(salary);
+		System.out.println(employe1.getSalary());
 		
 	}
 
